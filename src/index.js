@@ -24,22 +24,22 @@ function createAPokemonCard(pokemon) {
   ulEl.className = "card--text";
 
   let liEl1 = document.createElement("li");
-  liEl1.textContent = `HP: ${pokemon.stats[0].base_stat}`;
+  liEl1.textContent = `${pokemon.stats[0].stat.name}: ${pokemon.stats[0].base_stat}`.toUpperCase();
 
   let liEl2 = document.createElement("li");
-  liEl2.textContent = `ATTACK: ${pokemon.stats[1].base_stat}`;
+  liEl2.textContent = `${pokemon.stats[1].stat.name}: ${pokemon.stats[1].base_stat}`.toUpperCase();
 
   let liEl3 = document.createElement("li");
-  liEl3.textContent = `DEFENSE: ${pokemon.stats[2].base_stat}`;
+  liEl3.textContent = `${pokemon.stats[2].stat.name}: ${pokemon.stats[2].base_stat}`.toUpperCase();
 
   let liEl4 = document.createElement("li");
-  liEl4.textContent = `SPECIAL-ATTACK: ${pokemon.stats[3].base_stat}`;
+  liEl4.textContent = `${pokemon.stats[3].stat.name}: ${pokemon.stats[3].base_stat}`.toUpperCase();
 
   let liEl5 = document.createElement("li");
-  liEl5.textContent = `SPECIAL-DEFENSE: ${pokemon.stats[4].base_stat}`;
+  liEl5.textContent = `${pokemon.stats[4].stat.name}: ${pokemon.stats[4].base_stat}`.toUpperCase();
 
   let liEl6 = document.createElement("li");
-  liEl6.textContent = `SPEED: ${pokemon.stats[5].base_stat}`;
+  liEl6.textContent = `${pokemon.stats[5].stat.name}: ${pokemon.stats[5].base_stat}`.toUpperCase();
 
   liEl.append(h2El, imgEl, ulEl);
   ulEl.append(liEl1, liEl2, liEl3, liEl4, liEl5, liEl6);
